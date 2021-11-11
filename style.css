@@ -1,17 +1,18 @@
-
-button {
-  border: none;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 10px;
-  line-height: 12px;
-  cursor: pointer;
-  display: inline-block;
+.readmore button {
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    background-image: url(./Images/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    text-align: left;
+    padding-bottom: 52px;
+    width: 130px;
+    height: 67px;
+    background-position: 0% 50%;
 }
-span {
 
-    display: block;
-}
-.fas {
-  font-size: 20px;
+.readmore span {
+  margin-left: 0px;
 }
