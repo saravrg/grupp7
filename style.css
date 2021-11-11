@@ -1,3 +1,46 @@
+img {
+  width: 44%;
+  height: auto;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+.article3 {
+  width: 27%;
+  height: auto;
+  line-height: 15px;
+  display: flex;
+}
+
+.section3 {
+  margin-left: 10px;
+}
+
+.article4 {
+  width: 27%;
+  height: auto;
+  display: flex;
+}
+
+.section4 {
+  margin-left: 10px;
+}
+
+li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
 .smalltext {
   font-family: "open sans";
   font-size: 10px;
@@ -10,20 +53,20 @@ span {
 }
 
 h1 {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   font-style: bold;
   font-size: 16px;
   line-height: auto;
 }
 
 p {
-  font-family: 'open sans';
+  font-family: "open sans";
   font-size: 13px;
   line-height: auto;
 }
 
 .smallerp {
-  font-family: 'open sans';
+  font-family: "open sans";
   font-size: 12px;
   line-height: auto;
 }
@@ -52,7 +95,7 @@ p {
   right: 0;
   bottom: 4px;
   top: 155px;
-  background: rgba(0, 0, 0, 0.7);    
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .readmore {
@@ -71,3 +114,5 @@ span {
   display: block;
   color: white;
 }
+
+/*# sourceMappingURL=style.css.map */
