@@ -40,3 +40,77 @@ li {
   font-size: 13px;
   line-height: 15px;
 }
+
+.smalltext {
+    font-family: "open sans";
+    font-size: 10px;
+  }
+  
+  span {
+    font-family: "open sans";
+    font-size: 10px;
+    line-height: 0;
+  }
+  
+  h1 {
+    font-family: 'Times New Roman';
+    font-style: bold;
+    font-size: 16px;
+    line-height: auto;
+  }
+  
+  p {
+    font-family: 'open sans';
+    font-size: 13px;
+    line-height: auto;
+  }
+  
+  .smallerp {
+    font-family: 'open sans';
+    font-size: 12px;
+    line-height: auto;
+  }
+  
+  .article1 {
+    position: relative;
+    color: white;
+    width: fit-content;
+  }
+  
+  .text1 {
+    margin-left: 15px;
+  }
+  
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .container2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    top: 155px;
+    background: rgba(0, 0, 0, 0.7);    
+  }
+  
+  .readmore {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .readmore2 {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  
+  span {
+    display: block;
+    color: white;
+  }
