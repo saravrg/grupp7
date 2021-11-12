@@ -6,81 +6,108 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/04b25e5238.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
+
     <header class="header">
       <section>
         <article>
           <img class="loggan" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Logo-Logo.svg/715px-Logo-Logo.svg.png" alt="hemsidans Logo">
         </article>
-        <article class="navigation">
-          <nav>
-            <a href="/news">News</a>
-            <a href="/about-us">About us</a>
-            <a href="/press">Press</a>
-            <a href="/careers">Careers</a>
-            <a href="/contact">Contact</a>
-          </nav>
-        </article>
-        <article class="">
-          <input type="search" id="sok" name="q"
-                 aria-label="Search" placeholder="Search articles">
-        </article>
+            <article class="navigation">
+              <nav>
+                <a href="/news">News</a>
+                <a href="/about-us">About us</a>
+                <a href="/press">Press</a>
+                <a href="/careers">Careers</a>
+                <a href="/contact">Contact</a>
+              </nav>
+            </article>
+                <article class="">
+                  <input type="search" id="sok" name="q"
+                  aria-label="Search" placeholder="Search articles">
+                </article>
       </section>
     </header>
-    <article class="article1">
-        <img src="Images/pic1.jpg" alt="Joe Biden in dark suit shaking hands with other world leaders. Behind him stands a women dress in a black skirt-suit.">
-        <section class="container">
-            <section class="text1">
-                <p class="smalltext">Published Fri, 29 Oct 2021 by Roz</p>
-                <h1> Biden Begins a Diplomatic Marathon With a Visit to the Vatican</h1>
-                <p> President Biden is meeting with Pope Francis ahead of the G20 summit in Rome <br>and a climate gathering in Glasgow.</p>
-            </section>
-            <section class="readmore">
-                <span>Read more</span>
-                <img src="./Images/Arrow.svg" alt="Arrow-icon pointing to the right">
-            </section>
-        </section>
+
+
+<!-- This is for putting all content in the flexcontainer  -->
+<section class="flexcontainer">
+
+  <!-- This is for putting content in column 1 -->
+    <article class"column1">
+
+<!-- Article 1 -->
+      <article class="article1">
+          <img src="Images/pic1.jpg" alt="Joe Biden in dark suit shaking hands with other world leaders. Behind him stands a women dress in a black skirt-suit.">
+              <section class="container">
+                  <section class="text1">
+                      <p class="smalltext">Published Fri, 29 Oct 2021 by Roz</p>
+                        <h1> Biden Begins a Diplomatic Marathon With a Visit to the Vatican</h1>
+                            <p> President Biden is meeting with Pope Francis ahead of the G20 summit in Rome <br>and a climate gathering in Glasgow.</p>
+                  </section>
+                              <section class="readmore">
+                                  <span>Read more</span>
+                                      <img src="./Images/Arrow.svg" alt="Arrow-icon pointing to the right">
+                              </section>
+              </section>
     </article>
-    
+
+<!-- This is for putting end of column 1 -->
+</article>
+
+<article class="column">
+<!-- This is for putting content in column 2 -->
+<article class="column2">
+    <!-- Article 2 -->
     <article class="article1">
         <img src="Images/pic2.jpg" alt="Two of the candidates for the New York Mayor's race">
-        <section class="container2">
-            <section class="text1">
-                <p class="smalltext">Published Fri, 29 Oct 2021 by Dan Merica and Kevin Lipak, CNN</p>
-                <h1> A Last-Chance Guide to the New York Mayor’s Race </h1>
-                <p class="smallerp"> Fusion GPS was hired by a Democratic lawyer acting on behalf of <br>campaign and committee. </p>
-            </section>
-            <section class="readmore2">
-                <span>Read more</span>
-                <img src="./Images/Arrow.svg" alt="Arrow-icon pointing to the right">
-            </section>
+            <section class="container2">
+                <section class="text1">
+                  <p class="smalltext">Published Fri, 29 Oct 2021 by Dan Merica and Kevin Lipak, CNN</p>
+                    <h1> A Last-Chance Guide to the New York Mayor’s Race </h1>
+                      <p class="smallerp"> Fusion GPS was hired by a Democratic lawyer acting on behalf of <br>campaign and committee. </p>
+              </section>
+                        <section class="readmore2">
+                            <span>Read more</span>
+                                <img src="./Images/Arrow.svg" alt="Arrow-icon pointing to the right">
+                        </section>
+          </section>
+    </article>
+
+
+
+<!-- Article 3 -->
+        <article class="article3">
+          <img src="Images/Pic3.jpg" alt="Microsoft">
+            <section class="section3">
+                <h1>Microsoft's big plans for a
+                sustainable future</h1>
+                  <p>Brad Smith explains how the company will reduce emissions and how it
+                    can help others do the same</p>
+           </section>
+    </article>
+
+
+
+<!-- Article 4 -->
+    <article class="article4">
+        <img src="Images/Pic4.jpg" alt="Artificial intelligence">
+          <section class="section4">
+              <h1>Four major impacts of artificial
+                intelligence on healthcare</h1>
+                  <ul>
+                    <li>This is a list</li>
+                    <li>This is a list</li>
+                    <li>This is a list</li>
+                  </ul>
         </section>
     </article>
-    
-    </article><br>
-    <article class="article3">
-    <img src="Images/Pic3.jpg" alt="Microsoft">
-    <section class="section3">
-      <h1>Microsoft's big plans for a
-        sustainable future</h1>
-      <p>Brad Smith explains how the company will reduce emissions and how it
-       can help others do the same</p>
-      </section>
-    </article>
+<!-- This is for putting end of column 2 -->
+</article>
 
-    <article class="article4">
-    <img src="Images/Pic4.jpg" alt="Artificial intelligence">
-   <section class="section4">
-    <h1>Four major impacts of artificial
-        intelligence on healthcare</h1>
-    <ul>
-      <li>This is a list</li>
-      <li>This is a list</li>
-      <li>This is a list</li>
-    </ul>
-
-      </section>
-    </article>
+<!-- This is for closing the flexcontainer -->
+</section>
 
   </body>
 </html>
