@@ -1,4 +1,4 @@
-.flexcontainer {
+.flex-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -30,13 +30,6 @@
 img {
   width: 44%;
   height: auto;
-}
-
-
-h1 {
-  font-family:"Times New Roman", Times, serif;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 
@@ -78,31 +71,29 @@ li {
 }
 
 
-.smalltext {
+.thumbnail {
     font-family: "open sans";
     font-size: 10px;
   }
 
 
-  span {
-    font-family: "open sans";
-    font-size: 10px;
-    line-height: 0;
-  }
+  // span {
+  //   font-family: "open sans";
+  //   font-size: 10px;
+  //   line-height: 0;
+  // }
+  //
+  //
+  // span {
+  //   display: block;
+  //   color: white;
+  // }
 
 
   h1 {
-    font-family: 'Times New Roman';
-    font-style: bold;
+    font-family:"Times New Roman", Times, serif;
     font-size: 16px;
-    line-height: auto;
-  }
-
-
-  p {
-    font-family: 'open sans';
-    font-size: 13px;
-    line-height: auto;
+    font-weight: bold;
   }
 
 
@@ -156,14 +147,6 @@ li {
     right: 10px;
     bottom: 10px;
   }
-
-
-  span {
-    display: block;
-    color: white;
-  }
-
-
 
 
   .readmore button {
