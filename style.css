@@ -24,11 +24,6 @@
   height: auto;
 }
 
-img {
-  width: 44%;
-  height: auto;
-}
-
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
@@ -45,6 +40,11 @@ p {
   margin-left: 10px;
 }
 
+.img3 {
+  width: 44%;
+  height: auto;
+}
+
 .article4 {
   width: 27%;
   height: auto;
@@ -53,6 +53,11 @@ p {
 
 .section4 {
   margin-left: 10px;
+}
+
+.img4 {
+  width: 44%;
+  height: auto;
 }
 
 li {
