@@ -1,3 +1,5 @@
+// Styling header
+
 header {
   /* Utseende */
   background-color: white;
@@ -62,6 +64,8 @@ header {
   }
 }
 
+// Styling grid
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -79,8 +83,38 @@ header {
   // flex-basis: 100%;
   // flex: 1;
   width: 61%;
-  height: auto;
+  height: 559px;
+  margin-right: 17px;
 }
+
+.article1 {
+  position: absolute;
+  color: white;
+  width: fit-content;
+}
+
+.img1 {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.readmore {
+  position: relative;
+  text-align: right;
+  right: 20px;
+  bottom: 20px;
+  height: 20px;
+}
+
+
 
 
 .column2 {
@@ -89,16 +123,7 @@ header {
   flex-basis: 100%;
   flex: 1;
   width: 37%;
-  height: auto;
-}
-
-.column3 {
-
-}
-
-.column4 {
-
-
+  height: 559px;
 }
 
 
@@ -160,10 +185,9 @@ li {
   // }
   //
   //
-  // span {
-  //   display: block;
-  //   color: white;
-  // }
+  span {
+    color: white;
+  }
 
 
   h1 {
@@ -180,17 +204,10 @@ li {
   }
 
 
-  .article1 {
-    position: relative;
-    color: white;
-    width: fit-content;
-  }
 
 
-  .img1 {
-    width: 100%;
-    height: auto;
-  }
+
+
 
 
   .img2 {
@@ -204,13 +221,6 @@ li {
   }
 
 
-  .container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 4px;
-    background: rgba(0, 0, 0, 0.7);
-  }
 
 
   .container2 {
@@ -223,11 +233,7 @@ li {
   }
 
 
-  .readmore {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-  }
+
 
 
   .readmore2 {
@@ -246,12 +252,11 @@ background-repeat: no-repeat;
 background-size: 100%;
 background-color: transparent;
 text-align: left;
-padding-bottom: 52px;
 width: 130px;
-height: 67px;
-background-position: 0% 50%;
+height: 20px;
+background-position: 0% 20%;
 }
 
 .readmore span {
-margin-left: 0px;
+margin-left: -5px;
 }
