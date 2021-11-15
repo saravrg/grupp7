@@ -13,6 +13,8 @@
   flex-basis: 100%;
   flex: 1;
   margin-right: 10px;
+  width: 46%;
+  height: auto;
 }
 
 .column2 {
@@ -21,6 +23,7 @@
   flex-basis: 100%;
   flex: 1;
   margin-left: 17px;
+  width: 27%;
   height: auto;
 }
 
