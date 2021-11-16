@@ -150,6 +150,13 @@ header {
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+p.small {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 
