@@ -1,4 +1,33 @@
 @charset "UTF-8";
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  /*  Varför måste vi specificera detta för att överskriva webkit?
+
+  eller i rättare sagt, varför kommer - vebkit?
+
+   */
+  margin: 0px 0px 10px 0px;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin: 0px 0px 0px 0px;
+}
+
+.thumbnail {
+  font-family: "open sans";
+  font-size: 10px;
+  margin: 0px 0px 1px 0px;
+}
+
+.text1 {
+  margin: 21px 21px 21px 28px;
+}
+
 header {
   /* Utseende */
   background-color: white;
@@ -74,6 +103,10 @@ header section:nth-child(2) article input[type=text] {
   height: 559px;
   margin-right: 17px;
 }
+.column1 .article1 .container .text1 {
+  margin: 20px 0px 0px 27px;
+  width: 67%;
+}
 
 .article1 {
   position: absolute;
@@ -107,6 +140,22 @@ header section:nth-child(2) article input[type=text] {
   width: 100%;
   height: 276px;
 }
+.column2-1 .article1 .container2 .text1 {
+  margin: 11px 10px 15px 16px;
+}
+.column2-1 .article1 .container2 .text1 h1 {
+  margin: 0px 0px 4px 0px;
+}
+.column2-1 .article1 .container2 .text1 p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+.column2-1 .article1 .container2 .text1 .thumbnail {
+  font-size: 10px;
+  line-height: 14px;
+}
 
 .column2-2 {
   height: 274px;
@@ -127,19 +176,6 @@ header section:nth-child(2) article input[type=text] {
 .img3 {
   width: 44%;
   height: 100%;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
-
-p.small {
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 .article3 {
@@ -174,38 +210,13 @@ li {
   line-height: 15px;
 }
 
-.thumbnail {
-  font-family: "open sans";
-  font-size: 10px;
-  margin-block-start: 1em;
-  margin-block-end: 0em;
-}
-
 span {
   color: white;
-}
-
-h1 {
-  font-family: "Times New Roman", Times, serif;
-  /*  Varför måste vi specificera detta för att överskriva webkit?
-
-  eller i rättare sagt, varför kommer - vebkit?
-
-   */
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  line-height: 18px;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 .img2 {
   width: 100%;
   height: auto;
-}
-
-.text1 {
-  margin: 21px 21px 21px 28px;
 }
 
 .container2 {
@@ -220,7 +231,6 @@ h1 {
 .readmore {
   position: relative;
   text-align: right;
-  height: 20px;
 }
 
 .readmore2 {

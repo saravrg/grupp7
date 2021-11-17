@@ -1,5 +1,34 @@
 // Styling header
 
+h1 {
+  font-family:"Times New Roman", Times, serif;
+  /*  Varför måste vi specificera detta för att överskriva webkit?
+
+  eller i rättare sagt, varför kommer - vebkit?
+
+   */
+  margin: 0px 0px 10px 0px;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin: 0px 0px 0px 0px;
+}
+
+.thumbnail {
+  font-family: "open sans";
+  font-size: 10px;
+  margin: 0px 0px 1px 0px;
+  }
+
+.text1 {
+  margin: 21px 21px 21px 28px;
+}
+
 header {
   /* Utseende */
   background-color: white;
@@ -33,8 +62,8 @@ header {
         /*  margin: 10px 0px 0px 21px; */
       }
       nav {
-              display: flex;
-              flex-direction: row;
+        display: flex;
+        flex-direction: row;
         a {
           /*  marginal mellan nav */
           padding-right: 36px;
@@ -85,6 +114,14 @@ header {
   width: 61%;
   height: 559px;
   margin-right: 17px;
+  .article1 {
+    .container {
+      .text1 {
+        margin: 20px 0px 0px 27px;
+        width: 67%;
+      }
+    }
+  }
 }
 
 .article1 {
@@ -123,6 +160,26 @@ header {
 .column2-1 {
   width: 100%;
   height: 276px;
+  .article1 {
+    .container2 {
+      .text1 {
+        margin: 11px 10px 15px 16px;
+        h1 {
+          margin: 0px 0px 4px 0px;
+        }
+        p {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 15px;
+          letter-spacing: 0em;
+        }
+        .thumbnail {
+          font-size: 10px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
 }
 
 .column2-2 {
@@ -145,18 +202,6 @@ header {
 .img3 {
   width: 44%;
   height: 100%;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-}
-p.small {
-  font-family: "Open Sans", sans-serif;
-  font-size: 12px;
-  line-height: 15px;
 }
 
 
@@ -196,12 +241,7 @@ li {
 }
 
 
-.thumbnail {
-    font-family: "open sans";
-    font-size: 10px;
-    margin-block-start: 1em;
-    margin-block-end: 0em;
-  }
+
 
 
   // span {
@@ -216,20 +256,9 @@ li {
   }
 
 
-  h1 {
-    font-family:"Times New Roman", Times, serif;
 
-    /*  Varför måste vi specificera detta för att överskriva webkit?
 
-    eller i rättare sagt, varför kommer - vebkit?
 
-     */
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    line-height: 18px;
-    font-size: 16px;
-    font-weight: bold;
-  }
 
 
   .img2 {
@@ -238,9 +267,7 @@ li {
   }
 
 
-  .text1 {
-    margin: 21px 21px 21px 28px;
-  }
+
 
 
 
@@ -259,7 +286,6 @@ li {
   .readmore {
     position: relative;
     text-align: right;
-    height: 20px;
   }
 
   .readmore2 {
