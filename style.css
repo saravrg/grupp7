@@ -1,11 +1,6 @@
 @charset "UTF-8";
 h1 {
   font-family: "Times New Roman", Times, serif;
-  /*  Varför måste vi specificera detta för att överskriva webkit?
-
-  eller i rättare sagt, varför kommer - vebkit?
-
-   */
   margin: 0px 0px 10px 0px;
   line-height: 18px;
   font-size: 16px;
@@ -26,6 +21,56 @@ p {
 
 .text1 {
   margin: 21px 21px 21px 28px;
+}
+
+.article1 {
+  position: absolute;
+  color: white;
+  width: fit-content;
+}
+
+li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+span {
+  color: white;
+}
+
+.readmore span {
+  margin-left: -5px;
+}
+
+.readmore {
+  position: relative;
+  text-align: right;
+}
+
+.readmore2 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.readmore button {
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  background-image: url(./Images/Arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: transparent;
+  text-align: left;
+  width: 130px;
+  height: 20px;
+  background-position: 0% 20%;
+}
+
+hr {
+  border-top: 3px solid #1E2D37;
+  position: relative;
 }
 
 header {
@@ -97,37 +142,27 @@ header section:nth-child(2) article input[type=text] {
   margin-right: auto;
   max-width: 1078px;
 }
-
-.column1 {
+.flex-container .column1 {
   width: 61%;
   height: 559px;
   margin-right: 17px;
 }
-.column1 .article1 .container .text1 {
-  margin: 20px 0px 0px 27px;
-  width: 67%;
-}
-
-.article1 {
-  position: absolute;
-  color: white;
-  width: fit-content;
-}
-
-.img1 {
+.flex-container .column1 .article1 .img1 {
   width: 100%;
   height: 100%;
 }
-
-.container {
+.flex-container .column1 .article1 .container {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 4px;
   background: rgba(0, 0, 0, 0.7);
 }
-
-.column2 {
+.flex-container .column1 .article1 .container .text1 {
+  margin: 20px 0px 0px 27px;
+  width: 67%;
+}
+.flex-container .column2 {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -135,91 +170,15 @@ header section:nth-child(2) article input[type=text] {
   width: 37%;
   height: 559px;
 }
-
-.column2-1 {
+.flex-container .column2 .column2-1 {
   width: 100%;
   height: 276px;
 }
-.column2-1 .article1 .container2 .text1 {
-  margin: 11px 10px 15px 16px;
-}
-.column2-1 .article1 .container2 .text1 h1 {
-  margin: 0px 0px 4px 0px;
-}
-.column2-1 .article1 .container2 .text1 p {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0em;
-}
-.column2-1 .article1 .container2 .text1 .thumbnail {
-  font-size: 10px;
-  line-height: 14px;
-}
-
-.column2-2 {
-  height: 274px;
-  margin-top: 9px;
-}
-
-.column2-2-1 {
-  height: 126px;
-  width: 100%;
-  margin-bottom: 9px;
-}
-
-.column2-2-2 {
-  height: 139px;
-  width: 100%;
-}
-
-.img3 {
-  width: 44%;
-  height: 100%;
-}
-
-.article3 {
-  width: 100%;
-  height: 100%;
-  line-height: 15px;
-  display: flex;
-}
-
-.section3 {
-  margin-left: 10px;
-}
-
-.article4 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.section4 {
-  margin-left: 10px;
-}
-
-.img4 {
-  width: 44%;
-  height: 100%;
-}
-
-li {
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  line-height: 15px;
-}
-
-span {
-  color: white;
-}
-
-.img2 {
+.flex-container .column2 .column2-1 .article1 .img2 {
   width: 100%;
   height: auto;
 }
-
-.container2 {
+.flex-container .column2 .column2-1 .article1 .container2 {
   position: absolute;
   left: 0;
   right: 0;
@@ -227,42 +186,60 @@ span {
   top: 155px;
   background: rgba(0, 0, 0, 0.7);
 }
-
-.readmore {
-  position: relative;
-  text-align: right;
+.flex-container .column2 .column2-1 .article1 .container2 .text1 {
+  margin: 11px 10px 15px 16px;
 }
-
-.readmore2 {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
+.flex-container .column2 .column2-1 .article1 .container2 .text1 h1 {
+  margin: 0px 0px 4px 0px;
 }
-
-.readmore button {
-  border: none;
+.flex-container .column2 .column2-1 .article1 .container2 .text1 p {
   font-size: 12px;
-  cursor: pointer;
-  background-image: url(./Images/Arrow.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: transparent;
-  text-align: left;
-  width: 130px;
-  height: 20px;
-  background-position: 0% 20%;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+}
+.flex-container .column2 .column2-1 .article1 .container2 .text1 .thumbnail {
+  font-size: 10px;
+  line-height: 14px;
+}
+.flex-container .column2 .column2-2 {
+  height: 274px;
+  margin-top: 9px;
+}
+.flex-container .column2 .column2-2 .column2-2-1 {
+  height: 126px;
+  width: 100%;
+  margin-bottom: 9px;
+}
+.flex-container .column2 .column2-2 .column2-2-1 .article3 {
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
+  line-height: 15px;
+  display: flex;
+}
+.flex-container .column2 .column2-2 .column2-2-1 .article3 .img3 {
+  width: 44%;
+  height: 100%;
+}
+.flex-container .column2 .column2-2 .column2-2-2 {
+  height: 139px;
+  width: 100%;
+}
+.flex-container .column2 .column2-2 .article4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.flex-container .column2 .column2-2 .article4 .img4 {
+  width: 44%;
+  height: 100%;
+}
+.flex-container .column2 .column2-2 .article4 .section4 {
+  margin-left: 10px;
 }
 
-.readmore span {
-  margin-left: -5px;
-}
-
-hr {
-  border-top: 3px solid #1E2D37;
-  position: relative;
-}
-
-.img5 {
+footer .img5 {
   width: 100%;
   height: 145px;
 }

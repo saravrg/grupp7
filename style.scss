@@ -2,11 +2,6 @@
 
 h1 {
   font-family:"Times New Roman", Times, serif;
-  /*  Varför måste vi specificera detta för att överskriva webkit?
-
-  eller i rättare sagt, varför kommer - vebkit?
-
-   */
   margin: 0px 0px 10px 0px;
   line-height: 18px;
   font-size: 16px;
@@ -28,6 +23,61 @@ p {
 .text1 {
   margin: 21px 21px 21px 28px;
 }
+
+.article1 {
+  position: absolute;
+  color: white;
+  width: fit-content;
+}
+
+li {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+
+span {
+  color: white;
+}
+
+.readmore span {
+margin-left: -5px;
+}
+
+.readmore {
+  position: relative;
+  text-align: right;
+}
+
+.readmore2 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+
+.readmore button {
+border: none;
+font-size: 12px;
+cursor: pointer;
+background-image: url(./Images/Arrow.svg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-color: transparent;
+text-align: left;
+width: 130px;
+height: 20px;
+background-position: 0% 20%;
+}
+
+
+
+hr {
+border-top: 3px solid #1E2D37;
+position: relative;
+}
+
 
 header {
   /* Utseende */
@@ -104,143 +154,118 @@ header {
   margin-left: auto;
   margin-right: auto;
   max-width: 1078px;
-}
-
-
-.column1 {
-  // display: flex;
-  // flex-basis: 100%;
-  // flex: 1;
-  width: 61%;
-  height: 559px;
-  margin-right: 17px;
-  .article1 {
-    .container {
-      .text1 {
-        margin: 20px 0px 0px 27px;
-        width: 67%;
+  .column1 {
+    // display: flex;
+    // flex-basis: 100%;
+    // flex: 1;
+    width: 61%;
+    height: 559px;
+    margin-right: 17px;
+    .article1 {
+      .img1 {
+        width: 100%;
+        height: 100%;
+      }
+      .container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 4px;
+        background: rgba(0, 0, 0, 0.7);
+        .text1 {
+          margin: 20px 0px 0px 27px;
+          width: 67%;
+        }
       }
     }
   }
-}
-
-.article1 {
-  position: absolute;
-  color: white;
-  width: fit-content;
-}
-
-.img1 {
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 4px;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-
-
-
-
-
-.column2 {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  width: 37%;
-  height: 559px;
-}
-
-.column2-1 {
-  width: 100%;
-  height: 276px;
-  .article1 {
-    .container2 {
-      .text1 {
-        margin: 11px 10px 15px 16px;
-        h1 {
-          margin: 0px 0px 4px 0px;
+  .column2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    width: 37%;
+    height: 559px;
+    .column2-1 {
+      width: 100%;
+      height: 276px;
+      .article1 {
+        .img2 {
+          width: 100%;
+          height: auto;
         }
-        p {
-          font-size: 12px;
-          font-weight: 400;
+        .container2 {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 4px;
+          top: 155px;
+          background: rgba(0, 0, 0, 0.7);
+          .text1 {
+            margin: 11px 10px 15px 16px;
+            h1 {
+              margin: 0px 0px 4px 0px;
+            }
+            p {
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 15px;
+              letter-spacing: 0em;
+            }
+            .thumbnail {
+              font-size: 10px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+    }
+    .column2-2 {
+      height: 274px;
+      margin-top: 9px;
+      .column2-2-1 {
+        height: 126px;
+        width: 100%;
+        margin-bottom: 9px;
+        .article3 {
+          margin-left: 10px;
+          .img3 {
+            width: 44%;
+            height: 100%;
+          }
+          width: 100%;
+          height: 100%;
           line-height: 15px;
-          letter-spacing: 0em;
+          display: flex;
         }
-        .thumbnail {
-          font-size: 10px;
-          line-height: 14px;
+      }
+      .column2-2-2 {
+        height: 139px;
+        width: 100%;
+      }
+      .article4 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        .img4 {
+          width: 44%;
+          height: 100%;
+        }
+        .section4 {
+          margin-left: 10px;
         }
       }
     }
+
   }
 }
 
-.column2-2 {
-  height: 274px;
-  margin-top: 9px;
+footer {
+  .img5 {
+    width: 100%;
+    height: 145px;
+  }
 }
-.column2-2-1, .column2-2-2 {
-}
-.column2-2-1 {
-  height: 126px;
-  width: 100%;
-  margin-bottom: 9px;
-}
-
-.column2-2-2 {
-  height: 139px;
-  width: 100%;
-}
-
-.img3 {
-  width: 44%;
-  height: 100%;
-}
-
-
-.article3 {
-  width: 100%;
-  height: 100%;
-  line-height: 15px;
-  display: flex;
-}
-
-
-.section3 {
-  margin-left: 10px;
-}
-
-
-.article4 {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-
-.section4 {
-  margin-left: 10px;
-}
-
-.img4 {
-  width: 44%;
-  height: 100%;
-}
-
-li {
-  font-family: "Open Sans", sans-serif;
-  font-size: 13px;
-  line-height: 15px;
-}
-
-
 
 
 
@@ -251,74 +276,3 @@ li {
   // }
   //
   //
-  span {
-    color: white;
-  }
-
-
-
-
-
-
-
-  .img2 {
-    width: 100%;
-    height: auto;
-  }
-
-
-
-
-
-
-
-  .container2 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 4px;
-    top: 155px;
-    background: rgba(0, 0, 0, 0.7);
-  }
-
-
-
-  .readmore {
-    position: relative;
-    text-align: right;
-  }
-
-  .readmore2 {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-  }
-
-
-  .readmore button {
-border: none;
-font-size: 12px;
-cursor: pointer;
-background-image: url(./Images/Arrow.svg);
-background-repeat: no-repeat;
-background-size: 100%;
-background-color: transparent;
-text-align: left;
-width: 130px;
-height: 20px;
-background-position: 0% 20%;
-}
-
-.readmore span {
-margin-left: -5px;
-}
-
-hr {
-  border-top: 3px solid #1E2D37;
-  position: relative;
-}
-
-.img5 {
-  width: 100%;
-  height: 145px;
-}
