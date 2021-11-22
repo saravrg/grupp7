@@ -75,10 +75,6 @@ background-position: 0% 20%;
 
 
 
-hr {
-border-top: 3px solid #1E2D37;
-position: relative;
-}
 
 
 header {
@@ -343,15 +339,22 @@ background-position: 0% 20%;
 margin-left: -5px;
 }
 
-hr {
-  border-top: 3px solid #1E2D37;
-  position: relative;
+footer {
+  width: 100%;
+  hr {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #1E2D37;
+  }
+
+  .img5 {
+    width: 100%;
+    height: 145px;
+  }
+
 }
 
-.img5 {
-  width: 100%;
-  height: 145px;
-}
 
 @media (max-width: 376px) {
 

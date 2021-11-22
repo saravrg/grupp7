@@ -68,11 +68,6 @@ span {
   background-position: 0% 20%;
 }
 
-hr {
-  border-top: 3px solid #1E2D37;
-  position: relative;
-}
-
 header {
   /* Utseende */
   background-color: white;
@@ -239,6 +234,69 @@ header section:nth-child(2) article input[type=text] {
   margin-left: 10px;
 }
 
+footer .img5 {
+  width: 100%;
+  height: 145px;
+}
+
+.column2-2-1 {
+  height: 126px;
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.img2 {
+  width: 100%;
+  height: auto;
+}
+
+.container2 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4px;
+  top: 155px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.readmore {
+  position: relative;
+  text-align: right;
+}
+
+.readmore2 {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.readmore button {
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  background-image: url(./Images/Arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: transparent;
+  text-align: left;
+  width: 130px;
+  height: 20px;
+  background-position: 0% 20%;
+}
+
+.readmore span {
+  margin-left: -5px;
+}
+
+footer {
+  width: 100%;
+}
+footer hr {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: #1E2D37;
+}
 footer .img5 {
   width: 100%;
   height: 145px;
