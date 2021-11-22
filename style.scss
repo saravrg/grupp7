@@ -464,17 +464,50 @@ p {
     }
     .column2 {
       width: 100%;
+      height: 427px;
 
       .column2-1 {
+        width: 100%;
+        height: 150px;
 
         .article2 {
           position: relative;
+
+          .container2 {
+            top: -66px;
+
+          .text2 {
+            padding: 6px 10px 23px 16px;
+          }
+
+          .thumbnail2 {
+            margin-bottom: -2px;
+          }
+
+          
+
+          .bodytext2 {
+            display: none;
+          }
+        }
+        }
+      }
+      .column2-2 {
+        
+        .article4 {
+          height: 133px;
+          ul {
+            li {
+            font-size: 11px;
+            line-height: 15px;
+            }
+          }
         }
       }
     }
-}
+  }
 
-.readmore {
+.readmore, .readmore2 {
   position: absolute;
   right: 4px;
   bottom: 2px;
@@ -494,4 +527,25 @@ p {
   background-position: 0px 12px;
   }
 
-}
+  .readmore2 button {
+    border: none;
+    font-size: 9px;
+    cursor: pointer;
+    background-image: url(./Images/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    text-align: left;
+    width: 63px;
+    height: 23px;
+    background-position: 0px 12px;
+    }
+
+    footer {
+
+      .img5 {
+        width: 100%;
+        height: 71px;
+      }
+    }
+  }
