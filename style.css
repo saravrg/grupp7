@@ -97,7 +97,8 @@ header section:nth-child(1) article {
 }
 @media (max-width: 376px) {
   header section:nth-child(1) article {
-    flex-direction: column;
+    justify-content: space-between;
+    width: 346px;
   }
 }
 header section:nth-child(1) article img {
@@ -114,13 +115,16 @@ header section:nth-child(1) article nav {
   display: flex;
   flex-direction: row;
 }
+header section:nth-child(1) article nav .icon {
+  display: none;
+}
 @media (max-width: 376px) {
   header section:nth-child(1) article nav {
     flex-direction: column;
   }
-}
-header section:nth-child(1) article nav .topnav .icon {
-  display: none;
+  header section:nth-child(1) article nav .icon {
+    display: block;
+  }
 }
 header section:nth-child(1) article nav a {
   /*  marginal mellan nav */
@@ -178,7 +182,10 @@ header section:nth-child(2) article input[type=text] {
     display: none;
   }
 
-  .topnav a.icon {
+  nav {
+    border: 2px;
+  }
+  nav a.icon {
     float: right;
     display: block;
   }
