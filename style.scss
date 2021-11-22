@@ -13,6 +13,7 @@ h1 {
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
+  line-height: 15px;
   margin: 0px 0px 0px 0px;
 }
 
@@ -226,10 +227,15 @@ header {
         width: 100%;
         margin-bottom: 9px;
         .article3 {
-          margin-left: 10px;
+          width: 100%;
+          height: 100%;
+          display: flex;
           .img3 {
             width: 44%;
             height: 100%;
+          }
+          .section3 {
+            margin-left: 10px;
           }
           width: 100%;
           height: 100%;
