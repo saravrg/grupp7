@@ -33,6 +33,11 @@ p {
   width: fit-content;
 }
 
+.article2 {
+  color: white;
+  width: fit-content;
+}
+
 li {
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
@@ -188,30 +193,34 @@ header {
     .column2-1 {
       width: 100%;
       height: 276px;
-      .article1 {
+      .article2 {
+        width: 100%;
+        height: 100%;
         .img2 {
           width: 100%;
-          height: auto;
+          height: 100%;
         }
         .container2 {
-          position: absolute;
+          position: relative;
           left: 0;
           right: 0;
           bottom: 4px;
-          top: 155px;
+          top: -112px;
           background: rgba(0, 0, 0, 0.7);
-          .text1 {
-            margin: 11px 10px 15px 16px;
+          .text2 {
+            padding: 11px 10px 15px 16px;
             h1 {
-              margin: 0px 0px 4px 0px;
+              margin: 0px 0px 5px 0px;
             }
             p {
               font-size: 12px;
               font-weight: 400;
               line-height: 15px;
               letter-spacing: 0em;
+              margin-bottom: 16px;
             }
-            .thumbnail {
+            .thumbnail2 {
+              margin-bottom: -1px;
               font-size: 10px;
               line-height: 14px;
             }
@@ -299,22 +308,6 @@ footer {
   }
 
 
-
-
-
-
-
-  .container2 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 4px;
-    top: 155px;
-    background: rgba(0, 0, 0, 0.7);
-  }
-
-
-
   .readmore {
     position: relative;
     text-align: right;
@@ -322,8 +315,8 @@ footer {
 
   .readmore2 {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 8px;
+    bottom: 5px;
   }
 
 
@@ -336,14 +329,32 @@ background-repeat: no-repeat;
 background-size: 100%;
 background-color: transparent;
 text-align: left;
-width: 130px;
-height: 20px;
+width: 78px;
+height: 11px;
 background-position: 0% 20%;
 }
+
+.readmore2 button {
+  border: none;
+  font-size: 10px;
+  cursor: pointer;
+  background-image: url(./Images/Arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: transparent;
+  text-align: left;
+  width: 78px;
+  height: 23px;
+  background-position: 0% 12px;
+  }
 
 .readmore span {
 margin-left: -5px;
 }
+
+.readmore2 span {
+  margin-left: -5px;
+  }
 
 footer {
   width: 100%;
@@ -433,7 +444,7 @@ p {
 
       .column2-1 {
 
-        .article1 {
+        .article2 {
           position: relative;
         }
       }
