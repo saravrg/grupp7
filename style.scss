@@ -97,13 +97,13 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
-      @media (max-width: 600px) {
+      @media (max-width: 376px) {
         flex-direction: column;
       }
       img {
         height: 36px;
         margin-right: 36px;
-        @media (max-width: 600px) {
+        @media (max-width: 376px) {
           margin-right: 0px;
         }
         /*  margin: 10px 0px 0px 21px; */
@@ -111,7 +111,7 @@ header {
       nav {
         display: flex;
         flex-direction: row;
-        @media (max-width: 600px) {
+        @media (max-width: 376px) {
           flex-direction: column;
         }
         a {
@@ -124,7 +124,7 @@ header {
           font-weight: normal;
           font-size: 13px;
           line-height: 18px;
-          @media (max-width: 600px) {
+          @media (max-width: 376px) {
             font-size: 20px;
             line-height: 40px;
             }
@@ -140,7 +140,7 @@ header {
   section:nth-child(2){
     border: 1px;
     background-color: lightblue;
-    @media (max-width: 600px) {
+    @media (max-width: 376px) {
       display: none
     }
     article{
