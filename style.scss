@@ -1,6 +1,10 @@
 
 
 // Styling header
+body {
+
+  margin: 0px;
+}
 
 h1 {
   font-family:"Times New Roman", Times, serif;
@@ -42,7 +46,7 @@ ul {
   margin-left: -17px;
   margin-block-start: 0em;
   margin-block-end: 0em;
-  
+
   li {
   font-family: Open Sans, sans-serif;
   font-style: normal;
@@ -295,14 +299,6 @@ transition: width 0.4s ease-in-out;
   }
 }
 
-.column2-2-1 {
-  height: 126px;
-  width: 100%;
-  margin-bottom: 9px;
-}
-
-
-
   // span {
   //   font-family: "open sans";
   //   font-size: 10px;
@@ -317,10 +313,7 @@ transition: width 0.4s ease-in-out;
 
 
 
-  .img2 {
-    width: 100%;
-    height: auto;
-  }
+
 
 
   .readmore {
@@ -380,12 +373,10 @@ footer {
     height: 1px;
     background-color: #1E2D37;
   }
-
   .img5 {
     width: 100%;
     height: 145px;
   }
-
 }
 
 
@@ -477,7 +468,7 @@ p {
             margin-bottom: -2px;
           }
 
-          
+
 
           .bodytext2 {
             display: none;
@@ -486,7 +477,7 @@ p {
         }
       }
       .column2-2 {
-        
+
         .article4 {
           height: 133px;
           ul {

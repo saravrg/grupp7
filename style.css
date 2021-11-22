@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body {
+  margin: 0px;
+}
+
 h1 {
   font-family: "Times New Roman", Times, serif;
   margin: 0px 0px 7px 0px;
@@ -282,17 +286,6 @@ header section:nth-child(2) article input[type=text] {
 }
 .flex-container .column2 .column2-2 .article4 .section4 {
   margin-left: 10px;
-}
-
-.column2-2-1 {
-  height: 126px;
-  width: 100%;
-  margin-bottom: 9px;
-}
-
-.img2 {
-  width: 100%;
-  height: auto;
 }
 
 .readmore {
