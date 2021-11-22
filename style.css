@@ -61,20 +61,6 @@ span {
   bottom: 10px;
 }
 
-.readmore button {
-  border: none;
-  font-size: 12px;
-  cursor: pointer;
-  background-image: url(./Images/Arrow.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: transparent;
-  text-align: left;
-  width: 130px;
-  height: 20px;
-  background-position: 0% 20%;
-}
-
 header {
   /* headern består av två sectioner, den första innehåller logo och navigation, den andra innehåller sökrutan */
   /* Utseende */
@@ -438,6 +424,26 @@ footer .img5 {
   }
   .flex-container .column2 .column2-1 .article2 {
     position: relative;
+  }
+
+  .readmore {
+    position: absolute;
+    right: 4px;
+    bottom: 2px;
+  }
+
+  .readmore button {
+    border: none;
+    font-size: 9px;
+    cursor: pointer;
+    background-image: url(./Images/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    text-align: left;
+    width: 63px;
+    height: 23px;
+    background-position: 0px 12px;
   }
 }
 
