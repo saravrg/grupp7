@@ -421,12 +421,36 @@ footer .img5 {
   }
   .flex-container .column2 {
     width: 100%;
+    height: 427px;
+  }
+  .flex-container .column2 .column2-1 {
+    width: 100%;
+    height: 150px;
   }
   .flex-container .column2 .column2-1 .article2 {
     position: relative;
   }
+  .flex-container .column2 .column2-1 .article2 .container2 {
+    top: -66px;
+  }
+  .flex-container .column2 .column2-1 .article2 .container2 .text2 {
+    padding: 6px 10px 23px 16px;
+  }
+  .flex-container .column2 .column2-1 .article2 .container2 .thumbnail2 {
+    margin-bottom: -2px;
+  }
+  .flex-container .column2 .column2-1 .article2 .container2 .bodytext2 {
+    display: none;
+  }
+  .flex-container .column2 .column2-2 .article4 {
+    height: 133px;
+  }
+  .flex-container .column2 .column2-2 .article4 ul li {
+    font-size: 11px;
+    line-height: 15px;
+  }
 
-  .readmore {
+  .readmore, .readmore2 {
     position: absolute;
     right: 4px;
     bottom: 2px;
@@ -444,6 +468,25 @@ footer .img5 {
     width: 63px;
     height: 23px;
     background-position: 0px 12px;
+  }
+
+  .readmore2 button {
+    border: none;
+    font-size: 9px;
+    cursor: pointer;
+    background-image: url(./Images/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    text-align: left;
+    width: 63px;
+    height: 23px;
+    background-position: 0px 12px;
+  }
+
+  footer .img5 {
+    width: 100%;
+    height: 71px;
   }
 }
 
