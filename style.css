@@ -1,7 +1,10 @@
+/* Body styling */
 body {
   margin: 0px;
 }
 
+/* ----------------------------------------------------- */
+/* Font styling */
 h1 {
   font-family: "Times New Roman", Times, serif;
   margin: 0px 0px 7px 0px;
@@ -38,6 +41,8 @@ p {
   width: fit-content;
 }
 
+/* ----------------------------------------------------- */
+/* Listtext styling */
 ul {
   margin-left: -17px;
   margin-block-start: 0em;
@@ -50,10 +55,14 @@ ul li {
   line-height: 15px;
 }
 
+/* ----------------------------------------------------- */
+/* Button textcolor styling */
 span {
   color: white;
 }
 
+/* ----------------------------------------------------- */
+/* Header styling */
 header {
   background-color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -62,6 +71,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 21px;
+  /* Styling logo and navbar */
+  /* Styling search bar */
 }
 header section:nth-child(1) {
   display: flex;
@@ -116,6 +127,7 @@ header section:nth-child(1) article nav ul li li:last-child {
 }
 header section:nth-child(1) article nav ul li a {
   color: #1E2D37;
+  /* Font styling for navbar */
   text-decoration: none;
   font-family: Open Sans;
   font-style: normal;
@@ -165,6 +177,7 @@ header .hamburgermenu {
   display: none;
 }
 
+/* Styling for making navbar non-visable and adding a hamburgericon in mobile view */
 @media screen and (max-width: 376px) {
   .topnav a {
     display: none;
@@ -207,6 +220,7 @@ header .hamburgermenu {
     border: none;
   }
 }
+/* Styling flexbox */
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -325,6 +339,7 @@ header .hamburgermenu {
   margin-left: 10px;
 }
 
+/* Styling read more-button+text */
 .readmore {
   position: absolute;
   right: 15px;
@@ -373,6 +388,7 @@ header .hamburgermenu {
   margin-left: -5px;
 }
 
+/* Footer styling */
 footer {
   width: 100%;
 }
@@ -387,6 +403,10 @@ footer .img5 {
   height: auto;
 }
 
+/* Styling for footer ends here */
+/* Styling for desktop version ends here */
+/* ----------------------------------------------------- */
+/* Styling for mobile version up to 376px (Iphone 6/7/8) */
 @media (max-width: 376px) {
   h1 {
     margin: 0px 0px 10px 0px;
@@ -513,5 +533,6 @@ footer .img5 {
     width: 100%;
   }
 }
+/*Styling for mobile version ends here */
 
 /*# sourceMappingURL=style.css.map */
