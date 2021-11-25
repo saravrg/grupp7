@@ -1,11 +1,13 @@
 
 
-// Styling header
+// Body styling
 body {
 
   margin: 0px;
 }
+// -----------------------------------------------------
 
+// Font styling
 h1 {
   font-family:"Times New Roman", Times, serif;
   margin: 0px 0px 7px 0px;
@@ -41,7 +43,9 @@ p {
   color: white;
   width: fit-content;
 }
+// -----------------------------------------------------
 
+// Listtext styling
 ul {
     margin-left: -17px;
     margin-block-start: 0em;
@@ -54,39 +58,26 @@ ul {
     line-height: 15px;
   }
 }
+// -----------------------------------------------------
 
-
+// Button textcolor styling
 span {
   color: white;
 }
 
-.readmore span {
-margin-left: -5px;
-}
+// -----------------------------------------------------
 
-.readmore2 {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-
-
-
-
-
+// Header styling
 header {
-  /* headern består av två sectioner, den första innehåller logo och navigation, den andra innehåller sökrutan */
-  /* Utseende */
   background-color: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    /* Flex */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 10px 21px;
 
-  /*  Section 1 av 2 består av logo och navigering */
+  // Styling logo and navbar
   section:nth-child(1) {
     display: flex;
     align-items: center;
@@ -108,7 +99,6 @@ header {
         }
         /*  margin: 10px 0px 0px 21px; */
       }
-
 
       nav {
         color: #1E2D37;
@@ -133,7 +123,7 @@ header {
             a {
               color: #1E2D37;
 
-              /*  TYPSNITT */
+              // Font styling for navbar
               text-decoration: none;
               font-family: Open Sans;
               font-style: normal;
@@ -150,7 +140,7 @@ header {
       }
     }
   }
-  /*  Section 2 av 2 består av sökfältet */
+  // Styling search bar
   section:nth-child(2){
     @media (max-width: 700px) {
       display: none
@@ -183,7 +173,12 @@ header {
         }
       }
   }
+  .hamburgermenu {
+    display: none;
+  }
 }
+
+// Styling for making navbar non-visable and adding a hamburgericon in mobile view
 @media screen and (max-width: 376px) {
   .topnav a{
     display: none;
@@ -197,7 +192,6 @@ header {
   }
 }
 
-
 @media screen and (max-width: 376px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -210,8 +204,21 @@ header {
     display: block;
     text-align: left;
   }
+
+  .hamburgermenu {
+    background-image: url(./Images/Hamburger\ placeholder.svg);
+    width: 100%;
+    height: 30px;
+    display: block;
+    background-position: 163px 0px;
+    margin-right: 0px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+  }
 }
-// Styling grid
+
+// Styling flexbox
 
 .flex-container {
   display: flex;
@@ -333,24 +340,7 @@ header {
 
   }
 }
-
-  // span {
-  //   font-family: "open sans";
-  //   font-size: 10px;
-  //   line-height: 0;
-  // }
-  //
-  //
-
-
-
-
-
-
-
-
-
-
+  // Styling read more-button+text
   .readmore {
     position: absolute;
     right: 15px;
@@ -363,91 +353,99 @@ header {
     bottom: 5px;
   }
 
-
   .readmore button {
-border: none;
-font-size: 10px;
-cursor: pointer;
-background-image: url(./Images/Arrow.svg);
-background-repeat: no-repeat;
-background-size: 100%;
-background-color: transparent;
-text-align: left;
-width: 78px;
-height: 23px;
-background-position: 0px 12px;
-}
-
-.readmore2 button {
-  border: none;
-  font-size: 10px;
-  cursor: pointer;
-  background-image: url(./Images/Arrow.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: transparent;
-  text-align: left;
-  width: 78px;
-  height: 23px;
-  background-position: 0px 12px;
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+    background-image: url(./Images/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    text-align: left;
+    width: 78px;
+    height: 23px;
+    background-position: 0px 12px;
   }
 
-.readmore span {
-margin-left: -5px;
-}
+  .readmore2 button {
+    border: none;
+    font-size: 10px;
+    cursor: pointer;
+    background-image: url(./Images/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    text-align: left;
+    width: 78px;
+    height: 23px;
+    background-position: 0px 12px;
+  }
 
-.readmore2 span {
+  .readmore span {
   margin-left: -5px;
   }
 
-footer {
-  width: 100%;
-  hr {
-    position: relative;
+  .readmore2 span {
+    margin-left: -5px;
+    }
+  
+  // Footer styling
+  footer {
     width: 100%;
-    height: 1px;
-    background-color: #1E2D37;
+    hr {
+      position: relative;
+      width: 100%;
+      height: 1px;
+      background-color: #1E2D37;
+    }
+    .img5 {
+      width: 100%;
+      height: auto;
+    }
   }
-  .img5 {
-    width: 100%;
-    height: 145px;
-  }
-}
+  // Styling for footer ends here
 
+  // Styling for desktop version ends here
+  // -----------------------------------------------------
 
+// Styling for mobile version up to 376px (Iphone 6/7/8)
 @media (max-width: 376px) {
 
   h1 {
     margin: 0px 0px 10px 0px;
     line-height: 16px;
     font-size: 14px;
-}
-
-p {
-  font-size: 11px;
-}
-
-.thumbnail {
-  font-size: 9px;
-  margin: 12px 0px 1px 0px;
   }
 
-.text1 {
-  margin: 12px 0px 0px 14px;
-}
+  p {
+    font-size: 11px;
+  }
 
-// Styling grid
+  ul {
+    li {
+      font-size: 11px;
+    }
+  }
 
-.navigation nav {
-  display: hidden;
-}
+  .thumbnail {
+    font-size: 9px;
+    margin: 12px 0px 1px 0px;
+  }
 
-.flex-container {
-  width: 92%;
-  display: block;
-  margin-top: 17px;
-  overflow-x: hidden;
-  max-width: 376px;
+  .text1 {
+    margin: 12px 0px 0px 14px;
+  }
+
+  .navigation nav {
+    display: hidden;
+  }
+
+  .flex-container {
+    width: 92%;
+    display: block;
+    margin-top: 17px;
+    overflow-x: hidden;
+    max-width: 376px;
 
     .column1 {
       width: 100%;
@@ -456,30 +454,30 @@ p {
       margin-right: 0px;
       margin-bottom: 9px;
 
-        .article1 {
-          position: relative;
-          height: 190px;
-          width: 100%;
+      .article1 {
+        position: relative;
+        height: 190px;
+        width: 100%;
 
-          .container {
-            bottom: 0px;
-            height: 77px;
+        .container {
+          bottom: 0px;
+          height: 77px;
 
-            .text1 {
-              margin: 0px 0px 0px 14px;
-              width: 66%;
+          .text1 {
+            margin: 0px 0px 0px 14px;
+            width: 66%;
 
-              .img1 {
-                height: 190px;
-              }
-
-            .bodytext {
-              display: none;
+            .img1 {
+              height: 190px;
             }
 
-            }
+          .bodytext {
+            display: none;
+          }
+
           }
         }
+      }
     }
     .column2 {
       width: 100%;
@@ -495,53 +493,51 @@ p {
           .container2 {
             top: -66px;
 
-          .text2 {
-            padding: 6px 10px 23px 16px;
-          }
+            .text2 {
+              padding: 6px 10px 23px 16px;
+            }
 
-          .thumbnail2 {
-            margin-bottom: -2px;
-          }
+            .thumbnail2 {
+              margin-bottom: -2px;
+            }
 
-          .bodytext2 {
-            display: none;
+            .bodytext2 {
+              display: none;
+            }
           }
-        }
         }
       }
+
       .column2-2 {
 
-        .article4 {
-          height: 133px;
-          ul {
-            li {
-            font-size: 11px;
-            line-height: 15px;
-            }
+        .column2-2-2 {
+
+          .article4 {
+            height: 133px;
           }
         }
       }
     }
   }
 
-.readmore, .readmore2 {
-  position: absolute;
-  right: 4px;
-  bottom: 2px;
-}
+  .readmore, .readmore2 {
+    position: absolute;
+    right: 4px;
+    bottom: 2px;
+  }
 
-.readmore button {
-  border: none;
-  font-size: 9px;
-  cursor: pointer;
-  background-image: url(./Images/Arrow.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: transparent;
-  text-align: left;
-  width: 63px;
-  height: 23px;
-  background-position: 0px 12px;
+  .readmore button {
+    border: none;
+    font-size: 9px;
+    cursor: pointer;
+    background-image: url(./Images/Arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: transparent;
+    text-align: left;
+    width: 63px;
+    height: 23px;
+    background-position: 0px 12px;
   }
 
   .readmore2 button {
@@ -556,12 +552,14 @@ p {
     width: 63px;
     height: 23px;
     background-position: 0px 12px;
-    }
+  }
 
-    footer {
-
-      .img5 {
+  footer {
+    
+    .img5 {
         width: 100%;
-      }
     }
   }
+}
+
+//Styling for mobile version ends here

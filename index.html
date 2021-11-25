@@ -10,137 +10,135 @@
   </head>
 
   <body>
+    <!-- This is the header with two sections, logo and navigation in one and a search bar in the second -->
     <header class="header">
       <section>
         <article class="navigation">
-          <img class="loggan" src="Images/Logotype.png" alt="hemsidans Logo">
+          <img class="loggan" src="Images/Logotype.png" alt="the logotype">
           <nav class="topnav" id="myTopnav">
             <ul>
-              <li>
-                <a href="/news">News</a></li>
-              <li>
-                <a href="/about-us">About us</a></li>
-              <li>
-                <a href="/press">Press</a></li>
-              <li>
-                <a href="/careers">Careers</a></li>
-              <li>
-                <a href="/contact">Contact</a></li>
+              <li><a href="/news">News</a></li>
+              <li><a href="/about-us">About us</a></li>
+              <li><a href="/press">Press</a></li>
+              <li><a href="/careers">Careers</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
+            <button class="hamburgermenu"></button>
           </nav>
         </article>
       </section>
+      
       <section>
         <form>
           <div class="searchicon"></div>
           <input type="search" class="Search_bar" placeholder="Search articles">
         </form>
       </section>
+
     </header>
+    <!-- The header ends here -->
 
-
-<!-- This is for putting all content in the flexcontainer  -->
+<!-- The main content in the body starts here. The content is put into a parent-flexcontainer  -->
     <section class="flex-container">
 
-  <!-- This is for putting content in column 1 -->
+  <!-- This is for putting content in column 1 (flexchild) -->
       <section class="column1">
 
-<!-- Article 1 -->
+<!-- This is for putting content into the first article -->
         <article class="article1">
           <img class="img1" src="Images/pic1.jpg" alt="Iphone with facebook logo crossed out with a pencil.">
           <section class="container">
             <section class="text1">
-              <p class="thumbnail">
-                Published Fri, 29 Oct 2021 by Roz
-              </p>
-              <h1>
-                Facebook plans to rebrand its company with a new name
-              </h1>
-              <p class="bodytext">
-                Facebook is planning to change its company name next week to reflect its focus on building the metaverse.
-              </p>
+              <p class="thumbnail">Published Fri, 29 Oct 2021 by Roz</p>
+              <h1>Facebook plans to rebrand its company with a new name</h1>
+              <p class="bodytext">Facebook is planning to change its company name next week to reflect its focus on building the metaverse.</p>
             </section>
+            <!-- This is a button with an arrow icon (styled in CSS/SCSS with a text within the span-code) -->
             <section class="readmore">
               <button class="readmore btn">
                 <span>Read more</span>
               </button>
+              <!-- The button+text ends here -->
             </section>
           </section>
         </article>
-
-<!-- This is for putting end of column 1 -->
+        <!-- The first article ends here -->
       </section>
+    <!-- Column 1 ends here -->
 
 
-      <!-- This is for putting content in column 2 -->
+      <!-- This is for putting content in column 2. Column 2 is the 2nd flexchild to the flexbox-container however it is also a parent of itself -->
       <section class="column2">
-        <!-- Article 2 -->
+        <!-- This is for putting content into column 2-1, the first child of the parent "column2" -->
         <section class="column2-1">
+          <!-- The second article starts here -->
           <article class="article2">
             <img class="img2" src="Images/pic2.jpg" alt="Hand holding iphone with a screen showing the google search engine.">
             <section class="container2">
               <section class="text2">
-                <p class="thumbnail2">
-                  Published Fri, 29 Oct 2021 by Dan Merica and Kevin Lipak, CNN
-                </p>
-                <h1>
-                  Alphabet earns record profit on Google ad surge
-                </h1>
-                <p class="bodytext2">
-                  Google advertising revenue rising during the third quarter. The consumer shift to digital is real and will continue.
-                </p>
+                <p class="thumbnail2">Published Fri, 29 Oct 2021 by Dan Merica and Kevin Lipak, CNN</p>
+                <h1>Alphabet earns record profit on Google ad surge</h1>
+                <p class="bodytext2">Google advertising revenue rising during the third quarter. The consumer shift to digital is real and will continue.</p>
               </section>
+              <!-- This is a button with an arrow icon (styled in CSS/SCSS with a text within the span-code) -->
               <section class="readmore2">
                 <button class="readmore2 btn">
                   <span>Read more</span>
                 </button>
               </section>
+              <!-- The button+text ends here -->
             </section>
           </article>
+          <!-- The second article ends here -->
         </section>
-
+        <!-- Column 2-1 ends here -->
+        
+        <!-- This is for putting content into column 2-2, the second child of the parent "column2. It is also a parent itself" -->
         <section class="column2-2">
-
+          <!-- This is for putting content into column 2-2-1, the first child of column 2-2  -->
           <section class="column2-2-1">
-        <!-- Article 3 -->
+        <!-- The third article starts here -->
             <article class="article3">
               <img class="img3" src="Images/Pic3.jpg" alt="The microsoft building with a grey sky in the background.">
               <section class="section3">
-                <h1>
-                  Microsoft's big plans for a sustainable future
-                </h1>
-                <p>
-                  Brad Smith explains how the company will reduce emissions and how it can help others do the same
-                </p>
-               </section>
-              </article>
-            </section>
-            <section class="column2.2.2">
-            <!-- Article 4 -->
-                <article class="article4">
-                    <img class="img4" src="Images/Pic4.jpg" alt="White AI robot looking into the camera smiling.">
-                      <section class="section4">
-                          <h1>Three major impacts of artificial
-                            intelligence on healthcare</h1>
-                              <ul>
-                                <li>Predictive Analytics for Early Intervention</li>
-                                <li>Provide More Targeted Diagnostics</li>
-                                <li>Lower Healthcare Costs</li>
-                              </ul>
-                    </section>
+                <h1>Microsoft's big plans for a sustainable future</h1>
+                <p>Brad Smith explains how the company will reduce emissions and how it can help others do the same</p>
+              </section>
+            </article>
+          </section>
+          <!-- The third article ends here -->
 
-    </article>
-<!-- This is for putting end of column 2 -->
-</section>
-</section>
-</section>
+          <!-- This is for putting content into column 2-2-2, the second child of column 2-2  -->
+          <section class="column2.2.2">
+            <!-- The fourth article starts here -->
+            <article class="article4">
+              <img class="img4" src="Images/Pic4.jpg" alt="White AI robot looking into the camera smiling.">
+              <section class="section4">
+                <h1>Three major impacts of artificial intelligence on healthcare</h1>
+                  <ul>
+                    <li>Predictive Analytics for Early Intervention</li>
+                    <li>Provide More Targeted Diagnostics</li>
+                    <li>Lower Healthcare Costs</li>
+                  </ul>
+              </section>
+            </article>
+            <!-- The fourth article ends here -->
+          </section>
+          <!-- This is where column 2-2-2 ends -->
+        </section>
+        <!-- This is where column 2-2 ends -->
+      </section>
+      <!-- This is where column 2 ends -->
+      
+      <!-- This is the footer which consist of a divider and an image -->
+      <footer>
+        <hr>
+        <img class="img5" src="Images/footermobile.jpg" alt="Ad for Foodora">
+      </footer>
+      <!-- The footer ends here -->
 
-<footer>
-  <hr>
-  <img class="img5" src="Images/footermobile.jpg" alt="Ad for Foodora">
-</footer>
-<!-- This is for closing the flexcontainer -->
-</section>
+    </section>
+  <!-- This is for closing the flexcontainer -->
 
   </body>
 </html>
