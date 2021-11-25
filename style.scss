@@ -43,15 +43,15 @@ p {
 }
 
 ul {
-  margin-left: -17px;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
+    margin-left: -17px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 
   li {
-  font-family: Open Sans, sans-serif;
-  font-style: normal;
-  font-size: 13px;
-  line-height: 15px;
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 15px;
   }
 }
 
@@ -85,12 +85,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 21px;
-  input {
-    float: right;
-    padding: 6px;
-    border: 0px;
-    font-size: 17px;
-  }
+
   /*  Section 1 av 2 består av logo och navigering */
   section:nth-child(1) {
     display: flex;
@@ -116,8 +111,7 @@ header {
 
 
       nav {
-        display: flex;
-        flex-direction: row;
+        color: #1E2D37;
         .icon {
           display: none;
         }
@@ -125,62 +119,69 @@ header {
           flex-direction: column;
           .icon {
             display: block;
-
           }
         }
-
-        a {
-          /*  marginal mellan nav */
-          padding-right: 36px;
-          /*  TYPSNITT */
-          text-decoration: none;
-          font-family: Open Sans;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 13px;
-          line-height: 18px;
-          @media (max-width: 376px) {
-            font-size: 20px;
-            line-height: 40px;
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: row;
+          li {
+            padding-right: 36px;
+            li:last-child {
+              padding-right: 0px;
             }
-        }
-        a:last-child {
-          padding-right: 0px;
-        }
+            a {
+              color: #1E2D37;
 
+              /*  TYPSNITT */
+              text-decoration: none;
+              font-family: Open Sans;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 13px;
+              line-height: 18px;
+              @media (max-width: 376px) {
+                font-size: 20px;
+                line-height: 40px;
+              }
+            }
+          }
+        }
       }
     }
   }
   /*  Section 2 av 2 består av sökfältet */
   section:nth-child(2){
-    border: 1px;
-    background-color: lightblue;
     @media (max-width: 700px) {
       display: none
     }
-    article{
-      input[type=text] {
-        width: 130px;
-box-sizing: border-box;
-border: 2px solid #ccc;
-border-radius: 4px;
-font-size: 16px;
-background-color: white;
-background-image: url('searchicon.png');
-background-position: 10px 10px;
-background-repeat: no-repeat;
-padding: 12px 20px 12px 40px;
--webkit-transition: width 0.4s ease-in-out;
-transition: width 0.4s ease-in-out;
-/*
-        float: right;
-        padding: 6px;
-        margin-top: 8px;
-        margin-right: 16px;
-        font-size: 17px;
-        */
+      form {
+        height: 29px;
+        border: solid 0.5px #1E2D37;
+        border-radius: 10px;
+        display: flex;
+        text-align: center left;
+        .searchicon {
+          background-image: url(./Images/search.svg);
+          width: 12px;
+          height: 12px;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-color: transparent;
+          color: #1E2D37;
+          margin: 9px 11px 8px 15px;
+        }
+        input[type=search] {
+          width: 128px;
+          font-size: 13px;
+          -webkit-transition: width 0.4s ease-in-out;
+          transition: width 0.4s ease-in-out;
+          float: right;
+          border: none;
+          background: none;
+          height: 100%;
+        }
       }
-    }
   }
 }
 @media screen and (max-width: 376px) {
@@ -222,9 +223,6 @@ transition: width 0.4s ease-in-out;
   margin-right: auto;
   max-width: 1078px;
   .column1 {
-    // display: flex;
-    // flex-basis: 100%;
-    // flex: 1;
     width: 61%;
     height: 559px;
     margin-right: 17px;
@@ -505,8 +503,6 @@ p {
             margin-bottom: -2px;
           }
 
-
-
           .bodytext2 {
             display: none;
           }
@@ -566,7 +562,6 @@ p {
 
       .img5 {
         width: 100%;
-        height: 71px;
       }
     }
   }
